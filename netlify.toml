@@ -1,0 +1,11 @@
+[build]
+  # ビルドコマンド（npm run build）を実行します
+  command = "npm run build"
+  # 完成品が入るフォルダ（build）を公開するように指定します
+  publish = "build"
+
+# ReactなどのSPA（シングルページアプリ）でページ遷移を正しく動かすための設定
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
